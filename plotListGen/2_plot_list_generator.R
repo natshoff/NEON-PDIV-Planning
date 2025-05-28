@@ -54,7 +54,7 @@ leno_spec <- leno_full %>%
   distinct(taxonID, .keep_all = T) %>% 
   select(taxonID, scientificName, vernacularName, family, nativeStatusCode)
 # write to csv
-write.csv(leno_spec, "leno_spec.csv", row.names = F)
+write.csv(leno_spec, "Data/LENO/leno_spec.csv", row.names = F)
 
 
 ## generate per plot excel files
@@ -186,7 +186,7 @@ tall_spec <- tall_full %>%
   distinct(taxonID, .keep_all = T) %>% 
   select(taxonID, scientificName, vernacularName, family, nativeStatusCode)
 # write to csv
-write.csv(tall_spec, "tall_spec.csv", row.names = F)
+write.csv(tall_spec, "Data/TALL/tall_spec.csv", row.names = F)
 
 ## generate per plot excel files
 for (i in 1:length(tall_plots)) {
@@ -319,7 +319,7 @@ dela_spec <- dela_full %>%
   distinct(taxonID, .keep_all = T) %>% 
   select(taxonID, scientificName, vernacularName, family, nativeStatusCode)
 # write to csv
-write.csv(dela_spec, "dela_spec.csv", row.names = F)
+write.csv(dela_spec, "Data/DELA/dela_spec.csv", row.names = F)
 
 
 
